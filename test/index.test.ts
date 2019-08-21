@@ -10,13 +10,13 @@ test('address from seed with nonce', () => {
   const n2 = address(seedWithNonce(s, 2))
   const n3 = address(seedWithNonce(s, 3))
 
-  expect(n1).toBe('3PMGVGocJt176sS1i6z3n7Xwot7w8hhqSU7')
-  expect(n2).toBe('3P2BDW7MvwxhekbpStoF3byXtqiJnSByuTa')
-  expect(n3).toBe('3PAXLcTewsV9eZHc8JJBYFmCenEJKZYYKGL')
+  expect(n1).toBe('3EVqDcR3yG2upstwoZkimSmxW32GP5hYek3')
+  expect(n2).toBe('3EAjwqiobKzWNm4kYMZv2wDYazce2k14vwJ')
+  expect(n3).toBe('3EK64x56cFWxNZkYDm4rXb1DLw8dZymemhT')
 })
 
 test('address', () =>
-  expect(address(s)).toBe('3PKjdoVXMT96VEP8YAZRy4jKKA5GkjovboD')
+  expect(address(s)).toBe('3EUJN96y1qAuDEr4ddL6xPyL1Jyc15ojPaY')
 )
 
 test('verify address', () => {

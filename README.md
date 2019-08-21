@@ -433,8 +433,8 @@ const PRIVATE_KEY_LENGTH = 32
 const SIGNATURE_LENGTH = 64
 const ADDRESS_LENGTH = 26
 
-const MAIN_NET_CHAIN_ID = 87 // W
-const TEST_NET_CHAIN_ID = 84 // T
+const MAIN_NET_CHAIN_ID = 65 // A
+const TEST_NET_CHAIN_ID = 75 // K
 ```
 ## Interface 
 The full **IAcrylCrypto** interface can be found on the [project`s github](https://github.com/acrylplatform/ts-lib-crypto) in [interface.ts](https://github.com/acrylplatform/ts-lib-crypto/blob/master/src/crypto/interface.ts).
