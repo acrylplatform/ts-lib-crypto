@@ -4,7 +4,7 @@ import { bytesToString } from '../conversions/string-bytes'
 
 export const Seed = {
   isSeedWithNonce: (val: TSeed): val is INonceSeed =>
-    (<INonceSeed>val).nonce !== undefined,
+    (<INonceSeed> val).nonce !== undefined,
   toBinary: (seed: TSeed): INonceSeed =>
     Seed.isSeedWithNonce(seed) ?
       { seed: Seed.toBinary(seed.seed).seed, nonce: seed.nonce } :
