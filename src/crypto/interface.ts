@@ -105,7 +105,7 @@ export interface ISeedEmbeded<TDesiredOut extends TBinaryOut = TBase58> {
   signBytes: (bytes: TBinaryIn, random?: TBinaryIn) => TDesiredOut
 }
 
-export interface IWavesCrypto<TDesiredOut extends TBinaryOut = TBase58> {
+export interface IAcrylCrypto<TDesiredOut extends TBinaryOut = TBase58> {
 
   //Hashing
   blake2b: (input: TBinaryIn) => TBytes

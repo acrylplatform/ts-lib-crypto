@@ -1,4 +1,4 @@
-import { IWavesCrypto, TBinaryOut, TSeed, ISeedRelated, ISeedEmbeded, TKeyPair } from './interface'
+import { IAcrylCrypto, TBinaryOut, TSeed, ISeedRelated, ISeedEmbeded, TKeyPair } from './interface'
 import { randomBytes, randomSeed, random } from './random'
 import { aesEncrypt, aesDecrypt, messageDecrypt, messageEncrypt, sharedKey } from './encryption'
 import { base58Encode, base64Decode, base64Encode, base16Decode, base16Encode, base58Decode } from '../conversions/base-xx'
@@ -19,10 +19,10 @@ type TOutputTypesMap = {
 type TDefaultOut = 'Base58'
 type TOutput = keyof TOutputTypesMap
 type TOptions<T extends TBinaryOut = TDefaultOut, S extends TSeed | undefined = undefined> = { output?: T, seed?: S }
-type TWavesCrypto<T extends TBinaryOut = TDefaultOut, S extends TSeed | undefined = undefined> =
-  IWavesCrypto<T> & (S extends undefined ? ISeedRelated<T> : ISeedEmbeded<T>)
+type TAcrylCrypto<T extends TBinaryOut = TDefaultOut, S extends TSeed | undefined = undefined> =
+  IAcrylCrypto<T> & (S extends undefined ? ISeedRelated<T> : ISeedEmbeded<T>)
 
-export const crypto = <TOut extends TOutput = TDefaultOut, S extends TSeed | undefined = undefined>(options?: TOptions<TOut, S>): TWavesCrypto<TOutputTypesMap[TOut], S> => {
+export const crypto = <TOut extends TOutput = TDefaultOut, S extends TSeed | undefined = undefined>(options?: TOptions<TOut, S>): TAcrylCrypto<TOutputTypesMap[TOut], S> => {
 
   if (options && options.seed == '')
     throw new Error('Empty seed is not allowed.')
