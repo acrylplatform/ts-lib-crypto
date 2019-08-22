@@ -2,7 +2,7 @@ import { address, publicKey, privateKey, keyPair } from '@acryl/ts-lib-crypto'
 
 const seed = 'secret seed'
 
-address(seed) // 3P6z9d7iNzpF2JDwe4coWMgwE8SuTr67Wgp
+address(seed) // 3EFYsxjA3Nr3kJgsjXPUVgvwvHMEiDUkBgD
 
 publicKey(seed) // Fjyw5xkkJn97q8v2CRYFwwjjUfTUngu7B4vPr2aeYUuj
 

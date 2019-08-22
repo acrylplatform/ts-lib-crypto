@@ -9,7 +9,7 @@ const seed = randomSeed() //figure soap board earth measure stay can nature will
 
   //Functions for creating Acryl primitives like addresses and keys
 
-  address(seed) // 3PAP3wkgbGjdd1FuBLn9ajXvo6edBMCa115
+  address(seed) // 3EJwnHN8FemSM1iqGoYpa4mwVFYxRgXHvsU
 
   publicKey(seed) // DubrvJC83QaPFJU1hJDWxemgxcRxy482MDf8dxhWJ8K9
 
